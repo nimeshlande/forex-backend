@@ -1,0 +1,947 @@
+src/main/java/com/example/BootApp1Application.java:6:	UnnecessaryImport:	UnnecessaryImport: Unused import 'org.springframework.boot.autoconfigure.domain.EntityScan'
+src/main/java/com/example/BootApp1Application.java:7:	UnnecessaryImport:	UnnecessaryImport: Unused import 'org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration'
+src/main/java/com/example/BootApp1Application.java:8:	UnnecessaryImport:	UnnecessaryImport: Unused import 'org.springframework.boot.context.properties.EnableConfigurationProperties'
+src/main/java/com/example/BootApp1Application.java:15:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/BootApp1Application.java:15:	UseUtilityClass:	UseUtilityClass: This utility class has a non-private constructor
+src/main/java/com/example/BootApp1Application.java:17:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/BootApp1Application.java:17:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'args' is not assigned and could be declared final
+src/main/java/com/example/BootApp1Application.java:20:	SystemPrintln:	SystemPrintln: Usage of System.out/err
+src/main/java/com/example/SecurityConfig.java:5:	UnnecessaryImport:	UnnecessaryImport: Unused import 'org.springframework.context.annotation.ComponentScan'
+src/main/java/com/example/SecurityConfig.java:19:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/example/SecurityConfig.java:19:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/SecurityConfig.java:22:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/SecurityConfig.java:22:	LongVariable:	LongVariable: Avoid excessively long variable names like myUserDetailsService
+src/main/java/com/example/SecurityConfig.java:25:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'auth' is not assigned and could be declared final
+src/main/java/com/example/SecurityConfig.java:30:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'http' is not assigned and could be declared final
+src/main/java/com/example/SecurityConfig.java:45:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'dao' could be declared final
+src/main/java/com/example/SecurityConfig.java:55:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: Missing commented default access modifier on method 'getPasswordEncoder()'
+src/main/java/com/example/SecurityConfig.java:57:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'encoder' could be declared final
+src/main/java/com/example/SecurityConfig.java:57:	UnnecessaryLocalBeforeReturn:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'encoder'
+src/main/java/com/example/SwaggerConfig.java:31:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/example/SwaggerConfig.java:31:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/SwaggerConfig.java:32:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/SwaggerConfig.java:32:	LongVariable:	LongVariable: Avoid excessively long variable names like AUTHORIZATION_HEADER
+src/main/java/com/example/SwaggerConfig.java:43:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/SwaggerConfig.java:69:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'authorizationScope' could be declared final
+src/main/java/com/example/SwaggerConfig.java:69:	LongVariable:	LongVariable: Avoid excessively long variable names like authorizationScope
+src/main/java/com/example/SwaggerConfig.java:70:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'authorizationScopes' could be declared final
+src/main/java/com/example/SwaggerConfig.java:70:	LongVariable:	LongVariable: Avoid excessively long variable names like authorizationScopes
+src/main/java/com/example/SwaggerConfig.java:78:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/AdminController.java:33:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/example/controller/AdminController.java:33:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/controller/AdminController.java:36:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/controller/AdminController.java:39:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/controller/AdminController.java:42:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/controller/AdminController.java:45:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/controller/AdminController.java:50:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/AdminController.java:50:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'admin' is not assigned and could be declared final
+src/main/java/com/example/controller/AdminController.java:55:	LawOfDemeter:	LawOfDemeter: Call to `setRole` on foreign value `user` (degree 2)
+src/main/java/com/example/controller/AdminController.java:58:	LawOfDemeter:	LawOfDemeter: Call to `getPassword` on foreign value `user` (degree 2)
+src/main/java/com/example/controller/AdminController.java:58:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'encodedPassword' could be declared final
+src/main/java/com/example/controller/AdminController.java:60:	LawOfDemeter:	LawOfDemeter: Call to `setPassword` on foreign value `user` (degree 2)
+src/main/java/com/example/controller/AdminController.java:73:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/AdminController.java:74:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'list' could be declared final
+src/main/java/com/example/controller/AdminController.java:74:	UnnecessaryLocalBeforeReturn:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'list'
+src/main/java/com/example/controller/AdminController.java:81:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/AdminController.java:81:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/com/example/controller/AdminController.java:81:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/controller/AdminController.java:82:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'optional' could be declared final
+src/main/java/com/example/controller/AdminController.java:85:	ControlStatementBraces:	ControlStatementBraces: This statement should have braces
+src/main/java/com/example/controller/AdminController.java:85:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/example/controller/AdminController.java:87:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'admin' could be declared final
+src/main/java/com/example/controller/AdminController.java:93:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/AdminController.java:93:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'adminDetails' is not assigned and could be declared final
+src/main/java/com/example/controller/AdminController.java:93:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/com/example/controller/AdminController.java:93:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/controller/AdminController.java:95:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'admin' could be declared final
+src/main/java/com/example/controller/AdminController.java:110:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/AdminController.java:110:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/com/example/controller/AdminController.java:110:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/controller/AdminController.java:111:	UnusedLocalVariable:	UnusedLocalVariable: Avoid unused local variables such as 'admin'.
+src/main/java/com/example/controller/AdminController.java:115:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/main/java/com/example/controller/AdminController.java:115:	UseConcurrentHashMap:	UseConcurrentHashMap: If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/main/java/com/example/controller/BankAccountController.java:54:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/example/controller/BankAccountController.java:54:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/controller/BankAccountController.java:57:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/controller/BankAccountController.java:57:	LongVariable:	LongVariable: Avoid excessively long variable names like bankAccountService
+src/main/java/com/example/controller/BankAccountController.java:60:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/controller/BankAccountController.java:63:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/controller/BankAccountController.java:63:	LongVariable:	LongVariable: Avoid excessively long variable names like transactionController
+src/main/java/com/example/controller/BankAccountController.java:66:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/controller/BankAccountController.java:66:	LongVariable:	LongVariable: Avoid excessively long variable names like transactionService
+src/main/java/com/example/controller/BankAccountController.java:69:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/controller/BankAccountController.java:69:	LongVariable:	LongVariable: Avoid excessively long variable names like currencyConversionService
+src/main/java/com/example/controller/BankAccountController.java:83:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/BankAccountController.java:83:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'account' is not assigned and could be declared final
+src/main/java/com/example/controller/BankAccountController.java:83:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'cid' is not assigned and could be declared final
+src/main/java/com/example/controller/BankAccountController.java:85:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'customer' could be declared final
+src/main/java/com/example/controller/BankAccountController.java:101:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/BankAccountController.java:101:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/controller/BankAccountController.java:111:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/BankAccountController.java:111:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/controller/BankAccountController.java:111:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'amount' is not assigned and could be declared final
+src/main/java/com/example/controller/BankAccountController.java:113:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'initBal' could be declared final
+src/main/java/com/example/controller/BankAccountController.java:117:	AvoidDuplicateLiterals:	AvoidDuplicateLiterals: The String literal "Success" appears 6 times in this file; the first occurrence is on line 117
+src/main/java/com/example/controller/BankAccountController.java:117:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'transaction' could be declared final
+src/main/java/com/example/controller/BankAccountController.java:128:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/BankAccountController.java:128:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/controller/BankAccountController.java:128:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'amount' is not assigned and could be declared final
+src/main/java/com/example/controller/BankAccountController.java:130:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'initBal' could be declared final
+src/main/java/com/example/controller/BankAccountController.java:134:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'transaction' could be declared final
+src/main/java/com/example/controller/BankAccountController.java:146:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/BankAccountController.java:146:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/controller/BankAccountController.java:146:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'destAcctID' is not assigned and could be declared final
+src/main/java/com/example/controller/BankAccountController.java:147:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'amount' is not assigned and could be declared final
+src/main/java/com/example/controller/BankAccountController.java:149:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'initBalSender' could be declared final
+src/main/java/com/example/controller/BankAccountController.java:151:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'initBalReceiver' could be declared final
+src/main/java/com/example/controller/BankAccountController.java:155:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'transactionSender' could be declared final
+src/main/java/com/example/controller/BankAccountController.java:160:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'loggerReceiver' could be declared final
+src/main/java/com/example/controller/BankAccountController.java:175:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/BankAccountController.java:175:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/controller/BankAccountController.java:175:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'destAcctID' is not assigned and could be declared final
+src/main/java/com/example/controller/BankAccountController.java:176:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'currencyId' is not assigned and could be declared final
+src/main/java/com/example/controller/BankAccountController.java:178:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'sender' could be declared final
+src/main/java/com/example/controller/BankAccountController.java:180:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'receiver' could be declared final
+src/main/java/com/example/controller/BankAccountController.java:182:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'initBalSender' could be declared final
+src/main/java/com/example/controller/BankAccountController.java:184:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'initBalReceiver' could be declared final
+src/main/java/com/example/controller/BankAccountController.java:186:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'currencyConverted' could be declared final
+src/main/java/com/example/controller/BankAccountController.java:190:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'transactionSender' could be declared final
+src/main/java/com/example/controller/BankAccountController.java:199:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'loggerReceiver' could be declared final
+src/main/java/com/example/controller/BankAccountController.java:218:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/BankAccountController.java:218:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/controller/BankAccountController.java:230:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/BankAccountController.java:230:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:31:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/example/controller/CurrencyConversionController.java:31:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/controller/CurrencyConversionController.java:34:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/controller/CurrencyConversionController.java:34:	LongVariable:	LongVariable: Avoid excessively long variable names like currencyConversionService
+src/main/java/com/example/controller/CurrencyConversionController.java:37:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/controller/CurrencyConversionController.java:37:	LongVariable:	LongVariable: Avoid excessively long variable names like currencyRepository
+src/main/java/com/example/controller/CurrencyConversionController.java:42:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/CurrencyConversionController.java:42:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'currency' is not assigned and could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:43:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'curr' could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:46:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/example/controller/CurrencyConversionController.java:48:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'currencyCodePattern' could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:48:	LongVariable:	LongVariable: Avoid excessively long variable names like currencyCodePattern
+src/main/java/com/example/controller/CurrencyConversionController.java:48:	PrematureDeclaration:	PrematureDeclaration: Declaration of 'currencyCodePattern' can be moved closer to its usages
+src/main/java/com/example/controller/CurrencyConversionController.java:49:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'currencyNamePattern' could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:49:	LongVariable:	LongVariable: Avoid excessively long variable names like currencyNamePattern
+src/main/java/com/example/controller/CurrencyConversionController.java:49:	PrematureDeclaration:	PrematureDeclaration: Declaration of 'currencyNamePattern' can be moved closer to its usages
+src/main/java/com/example/controller/CurrencyConversionController.java:52:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/example/controller/CurrencyConversionController.java:56:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/example/controller/CurrencyConversionController.java:60:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/example/controller/CurrencyConversionController.java:64:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/example/controller/CurrencyConversionController.java:75:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/CurrencyConversionController.java:76:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'exchangeRateDtos' could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:84:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/CurrencyConversionController.java:84:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'code' is not assigned and could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:85:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'curr' could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:87:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/example/controller/CurrencyConversionController.java:95:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/CurrencyConversionController.java:95:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'code' is not assigned and could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:96:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'currencyOptional' could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:98:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/example/controller/CurrencyConversionController.java:101:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'currency' could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:108:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/CurrencyConversionController.java:108:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'code' is not assigned and could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:108:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'rate' is not assigned and could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:110:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'optional' could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:113:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/example/controller/CurrencyConversionController.java:115:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'currency' could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:117:	AvoidLiteralsInIfCondition:	AvoidLiteralsInIfCondition: Avoid using literals in if statements
+src/main/java/com/example/controller/CurrencyConversionController.java:118:	ControlStatementBraces:	ControlStatementBraces: This statement should have braces
+src/main/java/com/example/controller/CurrencyConversionController.java:126:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/CurrencyConversionController.java:127:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'fromCurrency' is not assigned and could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:128:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'toCurrency' is not assigned and could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:129:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'amount' is not assigned and could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:132:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/example/controller/CurrencyConversionController.java:134:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'result' could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:140:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/CurrencyConversionController.java:141:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'fromCurrency' is not assigned and could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:142:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'toCurrency' is not assigned and could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:143:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'amount' is not assigned and could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:146:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/example/controller/CurrencyConversionController.java:148:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'result' could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:157:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/CurrencyConversionController.java:158:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'totalExchangeRateList' could be declared final
+src/main/java/com/example/controller/CurrencyConversionController.java:158:	LongVariable:	LongVariable: Avoid excessively long variable names like totalExchangeRateList
+src/main/java/com/example/controller/CurrencyConversionController.java:160:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'c' could be declared final
+src/main/java/com/example/controller/CustomerController.java:34:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/example/controller/CustomerController.java:34:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/controller/CustomerController.java:37:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/controller/CustomerController.java:40:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/controller/CustomerController.java:40:	LongVariable:	LongVariable: Avoid excessively long variable names like customerRepository
+src/main/java/com/example/controller/CustomerController.java:43:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/controller/CustomerController.java:46:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/controller/CustomerController.java:49:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/CustomerController.java:49:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'customer' is not assigned and could be declared final
+src/main/java/com/example/controller/CustomerController.java:54:	LawOfDemeter:	LawOfDemeter: Call to `setRole` on foreign value `user` (degree 2)
+src/main/java/com/example/controller/CustomerController.java:57:	LawOfDemeter:	LawOfDemeter: Call to `getPassword` on foreign value `user` (degree 2)
+src/main/java/com/example/controller/CustomerController.java:57:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'encodedPassword' could be declared final
+src/main/java/com/example/controller/CustomerController.java:59:	LawOfDemeter:	LawOfDemeter: Call to `setPassword` on foreign value `user` (degree 2)
+src/main/java/com/example/controller/CustomerController.java:73:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/CustomerController.java:74:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'list' could be declared final
+src/main/java/com/example/controller/CustomerController.java:74:	UnnecessaryLocalBeforeReturn:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'list'
+src/main/java/com/example/controller/CustomerController.java:79:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/CustomerController.java:79:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/com/example/controller/CustomerController.java:79:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/controller/CustomerController.java:80:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'optional' could be declared final
+src/main/java/com/example/controller/CustomerController.java:83:	ControlStatementBraces:	ControlStatementBraces: This statement should have braces
+src/main/java/com/example/controller/CustomerController.java:83:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/example/controller/CustomerController.java:85:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'customer' could be declared final
+src/main/java/com/example/controller/CustomerController.java:90:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/CustomerController.java:90:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'customerDetails' is not assigned and could be declared final
+src/main/java/com/example/controller/CustomerController.java:90:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/com/example/controller/CustomerController.java:90:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/controller/CustomerController.java:92:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'customer' could be declared final
+src/main/java/com/example/controller/CustomerController.java:105:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/CustomerController.java:105:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/com/example/controller/CustomerController.java:105:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/controller/CustomerController.java:106:	UnusedLocalVariable:	UnusedLocalVariable: Avoid unused local variables such as 'customer'.
+src/main/java/com/example/controller/CustomerController.java:110:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/main/java/com/example/controller/CustomerController.java:110:	UseConcurrentHashMap:	UseConcurrentHashMap: If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/main/java/com/example/controller/TransactionController.java:21:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/example/controller/TransactionController.java:21:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/controller/TransactionController.java:24:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/controller/TransactionController.java:24:	LongVariable:	LongVariable: Avoid excessively long variable names like transactionService
+src/main/java/com/example/controller/TransactionController.java:28:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/TransactionController.java:28:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'transaction' is not assigned and could be declared final
+src/main/java/com/example/controller/TransactionController.java:36:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/TransactionController.java:36:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/controller/TransactionController.java:44:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'transactions' could be declared final
+src/main/java/com/example/controller/TransactionController.java:44:	UnnecessaryLocalBeforeReturn:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'transactions'
+src/main/java/com/example/controller/TransactionController.java:49:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/TransactionController.java:49:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/controller/UserController.java:18:	UnnecessaryImport:	UnnecessaryImport: Unused import 'com.example.model.Admin'
+src/main/java/com/example/controller/UserController.java:28:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/example/controller/UserController.java:28:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/controller/UserController.java:31:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/controller/UserController.java:34:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/controller/UserController.java:37:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/controller/UserController.java:40:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/UserController.java:40:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'user' is not assigned and could be declared final
+src/main/java/com/example/controller/UserController.java:43:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'userDB' could be declared final
+src/main/java/com/example/controller/UserController.java:44:	LogicInversion:	LogicInversion: Use opposite operator instead of the logic complement operator.
+src/main/java/com/example/controller/UserController.java:45:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/example/controller/UserController.java:49:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'encodedPassword' could be declared final
+src/main/java/com/example/controller/UserController.java:58:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/UserController.java:58:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'principal' is not assigned and could be declared final
+src/main/java/com/example/controller/UserController.java:60:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'user' could be declared final
+src/main/java/com/example/controller/UserController.java:62:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/example/controller/UserController.java:69:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/controller/UserController.java:69:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'principal' is not assigned and could be declared final
+src/main/java/com/example/controller/UserController.java:71:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'user' could be declared final
+src/main/java/com/example/controller/UserController.java:73:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/example/dto/CurrencyConversionDto.java:3:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/dto/CurrencyConversionDto.java:3:	DataClass:	DataClass: The class 'CurrencyConversionDto' is suspected to be a Data Class (WOC=20.000%, NOPA=0, NOAM=8, WMC=11)
+src/main/java/com/example/dto/CurrencyConversionDto.java:5:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/dto/CurrencyConversionDto.java:6:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/dto/CurrencyConversionDto.java:7:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/dto/CurrencyConversionDto.java:8:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/dto/CurrencyConversionDto.java:9:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/dto/CurrencyConversionDto.java:15:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'fromCurrencyCode' is not assigned and could be declared final
+src/main/java/com/example/dto/CurrencyConversionDto.java:23:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'toCurrencyCode' is not assigned and could be declared final
+src/main/java/com/example/dto/CurrencyConversionDto.java:27:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/dto/CurrencyConversionDto.java:27:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'amount' is not assigned and could be declared final
+src/main/java/com/example/dto/CurrencyConversionDto.java:27:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'convertedAmount' is not assigned and could be declared final
+src/main/java/com/example/dto/CurrencyConversionDto.java:27:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'fromCurrencyCode' is not assigned and could be declared final
+src/main/java/com/example/dto/CurrencyConversionDto.java:27:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'toCurrencyCode' is not assigned and could be declared final
+src/main/java/com/example/dto/CurrencyConversionDto.java:28:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'exchangeFee' is not assigned and could be declared final
+src/main/java/com/example/dto/CurrencyConversionDto.java:41:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'amount' is not assigned and could be declared final
+src/main/java/com/example/dto/CurrencyConversionDto.java:49:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'convertedAmount' is not assigned and could be declared final
+src/main/java/com/example/dto/CurrencyConversionDto.java:53:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/dto/CurrencyConversionDto.java:57:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/dto/CurrencyConversionDto.java:57:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'exchangeFee' is not assigned and could be declared final
+src/main/java/com/example/enums/ERole.java:3:	CommentRequired:	CommentRequired: Enum comments are required
+src/main/java/com/example/enums/Gender.java:3:	CommentRequired:	CommentRequired: Enum comments are required
+src/main/java/com/example/exception/Admin.java:8:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/exception/Admin.java:8:	MissingSerialVersionUID:	MissingSerialVersionUID: Classes implementing Serializable should set a serialVersionUID
+src/main/java/com/example/exception/Admin.java:9:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/exception/Admin.java:9:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'message' is not assigned and could be declared final
+src/main/java/com/example/exception/ResourceNotFoundException.java:3:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/exception/ResourceNotFoundException.java:3:	MissingSerialVersionUID:	MissingSerialVersionUID: Classes implementing Serializable should set a serialVersionUID
+src/main/java/com/example/exception/ResourceNotFoundException.java:5:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/exception/ResourceNotFoundException.java:5:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'message' is not assigned and could be declared final
+src/main/java/com/example/model/Admin.java:17:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/example/model/Admin.java:17:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/model/Admin.java:17:	DataClass:	DataClass: The class 'Admin' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=16, WMC=16)
+src/main/java/com/example/model/Admin.java:21:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Admin.java:21:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/model/Admin.java:24:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Admin.java:27:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Admin.java:30:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Admin.java:33:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Admin.java:36:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Admin.java:39:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Admin.java:42:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Admin.java:51:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/com/example/model/Admin.java:51:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/model/Admin.java:59:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'name' is not assigned and could be declared final
+src/main/java/com/example/model/Admin.java:67:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'gender' is not assigned and could be declared final
+src/main/java/com/example/model/Admin.java:75:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'address' is not assigned and could be declared final
+src/main/java/com/example/model/Admin.java:83:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'number' is not assigned and could be declared final
+src/main/java/com/example/model/Admin.java:91:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'emailId' is not assigned and could be declared final
+src/main/java/com/example/model/Admin.java:101:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'country' is not assigned and could be declared final
+src/main/java/com/example/model/Admin.java:109:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'user' is not assigned and could be declared final
+src/main/java/com/example/model/BankAccount.java:14:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/model/BankAccount.java:14:	DataClass:	DataClass: The class 'BankAccount' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=8, WMC=10)
+src/main/java/com/example/model/BankAccount.java:18:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/BankAccount.java:19:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/BankAccount.java:20:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/BankAccount.java:23:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/BankAccount.java:25:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/model/BankAccount.java:25:	UncommentedEmptyConstructor:	UncommentedEmptyConstructor: Document empty constructor
+src/main/java/com/example/model/BankAccount.java:29:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/model/BankAccount.java:29:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/model/BankAccount.java:29:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'balance' is not assigned and could be declared final
+src/main/java/com/example/model/BankAccount.java:29:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'startDate' is not assigned and could be declared final
+src/main/java/com/example/model/BankAccount.java:40:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/model/BankAccount.java:48:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'balance' is not assigned and could be declared final
+src/main/java/com/example/model/BankAccount.java:56:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'startDate' is not assigned and could be declared final
+src/main/java/com/example/model/BankAccount.java:64:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'customer' is not assigned and could be declared final
+src/main/java/com/example/model/Currency.java:3:	UnnecessaryImport:	UnnecessaryImport: Unused import 'javax.persistence.Column'
+src/main/java/com/example/model/Currency.java:11:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/model/Currency.java:11:	DataClass:	DataClass: The class 'Currency' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=8, WMC=10)
+src/main/java/com/example/model/Currency.java:15:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Currency.java:15:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/model/Currency.java:17:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Currency.java:19:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Currency.java:22:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Currency.java:24:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/model/Currency.java:24:	UncommentedEmptyConstructor:	UncommentedEmptyConstructor: Document empty constructor
+src/main/java/com/example/model/Currency.java:27:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/model/Currency.java:27:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'code' is not assigned and could be declared final
+src/main/java/com/example/model/Currency.java:27:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'exchangeRate' is not assigned and could be declared final
+src/main/java/com/example/model/Currency.java:27:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/com/example/model/Currency.java:27:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'name' is not assigned and could be declared final
+src/main/java/com/example/model/Currency.java:27:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/model/Currency.java:39:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/com/example/model/Currency.java:39:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/model/Currency.java:47:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'code' is not assigned and could be declared final
+src/main/java/com/example/model/Currency.java:55:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'name' is not assigned and could be declared final
+src/main/java/com/example/model/Currency.java:63:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'exchangeRate' is not assigned and could be declared final
+src/main/java/com/example/model/CurrencyConversion.java:11:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/model/CurrencyConversion.java:11:	DataClass:	DataClass: The class 'CurrencyConversion' is suspected to be a Data Class (WOC=12.500%, NOPA=0, NOAM=14, WMC=19)
+src/main/java/com/example/model/CurrencyConversion.java:15:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/CurrencyConversion.java:15:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/model/CurrencyConversion.java:18:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/CurrencyConversion.java:20:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/CurrencyConversion.java:22:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/CurrencyConversion.java:23:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/model/CurrencyConversion.java:23:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'fromCurrencyCode' is not assigned and could be declared final
+src/main/java/com/example/model/CurrencyConversion.java:23:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/com/example/model/CurrencyConversion.java:23:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'toCurrencyCode' is not assigned and could be declared final
+src/main/java/com/example/model/CurrencyConversion.java:23:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'totalExchangeFee' is not assigned and could be declared final
+src/main/java/com/example/model/CurrencyConversion.java:23:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/model/CurrencyConversion.java:24:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'amount' is not assigned and could be declared final
+src/main/java/com/example/model/CurrencyConversion.java:24:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'convertedAmount' is not assigned and could be declared final
+src/main/java/com/example/model/CurrencyConversion.java:24:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'exchangeFee' is not assigned and could be declared final
+src/main/java/com/example/model/CurrencyConversion.java:39:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/com/example/model/CurrencyConversion.java:39:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/model/CurrencyConversion.java:47:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'totalExchangeFee' is not assigned and could be declared final
+src/main/java/com/example/model/CurrencyConversion.java:55:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'exchangeFee' is not assigned and could be declared final
+src/main/java/com/example/model/CurrencyConversion.java:59:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/CurrencyConversion.java:59:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/example/model/CurrencyConversion.java:60:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/CurrencyConversion.java:60:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/example/model/CurrencyConversion.java:61:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/CurrencyConversion.java:61:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/com/example/model/CurrencyConversion.java:67:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'fromCurrencyCode' is not assigned and could be declared final
+src/main/java/com/example/model/CurrencyConversion.java:75:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'toCurrencyCode' is not assigned and could be declared final
+src/main/java/com/example/model/CurrencyConversion.java:79:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/model/CurrencyConversion.java:79:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'amount' is not assigned and could be declared final
+src/main/java/com/example/model/CurrencyConversion.java:79:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'convertedAmount' is not assigned and could be declared final
+src/main/java/com/example/model/CurrencyConversion.java:79:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'fromCurrencyCode' is not assigned and could be declared final
+src/main/java/com/example/model/CurrencyConversion.java:79:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'toCurrencyCode' is not assigned and could be declared final
+src/main/java/com/example/model/CurrencyConversion.java:80:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'exchangeFee' is not assigned and could be declared final
+src/main/java/com/example/model/CurrencyConversion.java:88:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/model/CurrencyConversion.java:88:	UncommentedEmptyConstructor:	UncommentedEmptyConstructor: Document empty constructor
+src/main/java/com/example/model/CurrencyConversion.java:96:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'amount' is not assigned and could be declared final
+src/main/java/com/example/model/CurrencyConversion.java:104:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'convertedAmount' is not assigned and could be declared final
+src/main/java/com/example/model/CurrencyConversion.java:108:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/model/CurrencyConversion.java:112:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/model/CurrencyConversion.java:112:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'exchangeFee' is not assigned and could be declared final
+src/main/java/com/example/model/Customer.java:18:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/example/model/Customer.java:18:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/model/Customer.java:18:	DataClass:	DataClass: The class 'Customer' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=16, WMC=16)
+src/main/java/com/example/model/Customer.java:22:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Customer.java:22:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/model/Customer.java:25:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Customer.java:28:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Customer.java:31:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Customer.java:34:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Customer.java:37:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Customer.java:40:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Customer.java:43:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Customer.java:52:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/com/example/model/Customer.java:52:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/model/Customer.java:60:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'name' is not assigned and could be declared final
+src/main/java/com/example/model/Customer.java:68:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'gender' is not assigned and could be declared final
+src/main/java/com/example/model/Customer.java:76:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'address' is not assigned and could be declared final
+src/main/java/com/example/model/Customer.java:84:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'number' is not assigned and could be declared final
+src/main/java/com/example/model/Customer.java:92:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'emailId' is not assigned and could be declared final
+src/main/java/com/example/model/Customer.java:102:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'country' is not assigned and could be declared final
+src/main/java/com/example/model/Customer.java:110:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'user' is not assigned and could be declared final
+src/main/java/com/example/model/Role.java:9:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/model/Role.java:9:	DataClass:	DataClass: The class 'Role' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=4, WMC=5)
+src/main/java/com/example/model/Role.java:9:	ShortClassName:	ShortClassName: Avoid short class names like Role
+src/main/java/com/example/model/Role.java:13:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Role.java:13:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/model/Role.java:17:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Role.java:19:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/model/Role.java:19:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'name' is not assigned and could be declared final
+src/main/java/com/example/model/Role.java:27:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/com/example/model/Role.java:27:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/model/Role.java:35:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'name' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:17:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/model/Transaction.java:17:	DataClass:	DataClass: The class 'Transaction' is suspected to be a Data Class (WOC=4.762%, NOPA=0, NOAM=20, WMC=25)
+src/main/java/com/example/model/Transaction.java:21:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Transaction.java:22:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Transaction.java:23:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Transaction.java:24:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Transaction.java:25:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Transaction.java:26:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Transaction.java:26:	FieldNamingConventions:	FieldNamingConventions: The field name 'transaction_date' doesn't match '[a-z][a-zA-Z0-9]*'
+src/main/java/com/example/model/Transaction.java:27:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Transaction.java:27:	FieldNamingConventions:	FieldNamingConventions: The field name 'transaction_time' doesn't match '[a-z][a-zA-Z0-9]*'
+src/main/java/com/example/model/Transaction.java:32:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Transaction.java:35:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Transaction.java:38:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/Transaction.java:40:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/model/Transaction.java:40:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:40:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'finalBal' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:40:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'initBal' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:40:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'transacStatus' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:40:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'transacType' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:41:	FormalParameterNamingConventions:	FormalParameterNamingConventions: The method parameter name 'transaction_date' doesn't match '[a-z][a-zA-Z0-9]*'
+src/main/java/com/example/model/Transaction.java:41:	FormalParameterNamingConventions:	FormalParameterNamingConventions: The method parameter name 'transaction_time' doesn't match '[a-z][a-zA-Z0-9]*'
+src/main/java/com/example/model/Transaction.java:41:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'receiverAccount' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:41:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'senderAccount' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:41:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'transaction_date' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:41:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'transaction_time' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:42:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'currencyConverted' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:58:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/model/Transaction.java:58:	UncommentedEmptyConstructor:	UncommentedEmptyConstructor: Document empty constructor
+src/main/java/com/example/model/Transaction.java:70:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'currencyConverted' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:76:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/model/Transaction.java:76:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:76:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'finalBal' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:76:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'initBal' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:76:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'transacStatus' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:76:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'transacType' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:84:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/model/Transaction.java:84:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:84:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'currencyConverted' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:84:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'finalBal' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:84:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'initBal' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:84:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'receiverAccount' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:84:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'senderAccount' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:84:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'transacStatus' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:84:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'transacType' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:101:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:109:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'transacType' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:117:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'transacStatus' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:125:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'initBal' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:135:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'senderAccount' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:147:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'receiverAccount' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:157:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'finalBal' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:161:	MethodNamingConventions:	MethodNamingConventions: The instance method name 'getTransaction_date' doesn't match '[a-z][a-zA-Z0-9]*'
+src/main/java/com/example/model/Transaction.java:165:	FormalParameterNamingConventions:	FormalParameterNamingConventions: The method parameter name 'transaction_date' doesn't match '[a-z][a-zA-Z0-9]*'
+src/main/java/com/example/model/Transaction.java:165:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'transaction_date' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:165:	MethodNamingConventions:	MethodNamingConventions: The instance method name 'setTransaction_date' doesn't match '[a-z][a-zA-Z0-9]*'
+src/main/java/com/example/model/Transaction.java:179:	MethodNamingConventions:	MethodNamingConventions: The instance method name 'getTransaction_time' doesn't match '[a-z][a-zA-Z0-9]*'
+src/main/java/com/example/model/Transaction.java:183:	FormalParameterNamingConventions:	FormalParameterNamingConventions: The method parameter name 'transaction_time' doesn't match '[a-z][a-zA-Z0-9]*'
+src/main/java/com/example/model/Transaction.java:183:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'transaction_time' is not assigned and could be declared final
+src/main/java/com/example/model/Transaction.java:183:	MethodNamingConventions:	MethodNamingConventions: The instance method name 'setTransaction_time' doesn't match '[a-z][a-zA-Z0-9]*'
+src/main/java/com/example/model/User.java:3:	UnnecessaryImport:	UnnecessaryImport: Unused import 'java.util.HashSet'
+src/main/java/com/example/model/User.java:4:	UnnecessaryImport:	UnnecessaryImport: Unused import 'java.util.Set'
+src/main/java/com/example/model/User.java:10:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/example/model/User.java:10:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/model/User.java:10:	DataClass:	DataClass: The class 'User' is suspected to be a Data Class (WOC=0.000%, NOPA=0, NOAM=8, WMC=8)
+src/main/java/com/example/model/User.java:10:	ShortClassName:	ShortClassName: Avoid short class names like User
+src/main/java/com/example/model/User.java:14:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/User.java:14:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/model/User.java:16:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/User.java:18:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/User.java:20:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/model/User.java:26:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/com/example/model/User.java:26:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/model/User.java:34:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'username' is not assigned and could be declared final
+src/main/java/com/example/model/User.java:42:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'password' is not assigned and could be declared final
+src/main/java/com/example/model/User.java:50:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'role' is not assigned and could be declared final
+src/main/java/com/example/repository/AdminRepository.java:9:	UnnecessaryImport:	UnnecessaryImport: Unused import 'com.example.model.User'
+src/main/java/com/example/repository/AdminRepository.java:13:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/repository/AdminRepository.java:15:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/repository/BankAccountRepository.java:8:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/repository/CurrencyConversionRepo.java:9:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/repository/CurrencyRepository.java:11:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/repository/CurrencyRepository.java:13:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/repository/CustomerRepository.java:8:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/repository/RoleRepository.java:12:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/repository/RoleRepository.java:14:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/repository/TransactionRepository.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/repository/UserRepository.java:8:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/repository/UserRepository.java:11:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/AdminService.java:13:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/example/service/AdminService.java:13:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/service/AdminService.java:16:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/service/AdminService.java:18:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/AdminService.java:18:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'admin' is not assigned and could be declared final
+src/main/java/com/example/service/AdminService.java:22:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/AdminService.java:22:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'cid' is not assigned and could be declared final
+src/main/java/com/example/service/AdminService.java:23:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'optional' could be declared final
+src/main/java/com/example/service/AdminService.java:26:	ControlStatementBraces:	ControlStatementBraces: This statement should have braces
+src/main/java/com/example/service/AdminService.java:26:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/example/service/AdminService.java:32:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/AdminService.java:33:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'list' could be declared final
+src/main/java/com/example/service/AdminService.java:33:	UnnecessaryLocalBeforeReturn:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'list'
+src/main/java/com/example/service/AdminService.java:36:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/AdminService.java:36:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'adminId' is not assigned and could be declared final
+src/main/java/com/example/service/AdminService.java:40:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/AdminService.java:40:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/com/example/service/AdminService.java:40:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/service/AdminService.java:41:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'optional' could be declared final
+src/main/java/com/example/service/AdminService.java:41:	UnnecessaryLocalBeforeReturn:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'optional'
+src/main/java/com/example/service/BankAccountService.java:15:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/example/service/BankAccountService.java:15:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/service/BankAccountService.java:17:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/service/BankAccountService.java:17:	LongVariable:	LongVariable: Avoid excessively long variable names like bankAccountRepository
+src/main/java/com/example/service/BankAccountService.java:19:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/service/BankAccountService.java:19:	LongVariable:	LongVariable: Avoid excessively long variable names like currencyTransferRepo
+src/main/java/com/example/service/BankAccountService.java:20:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/BankAccountService.java:20:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acct' is not assigned and could be declared final
+src/main/java/com/example/service/BankAccountService.java:24:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/BankAccountService.java:24:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/service/BankAccountService.java:28:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/BankAccountService.java:28:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/service/BankAccountService.java:32:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/BankAccountService.java:32:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/service/BankAccountService.java:33:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'account' could be declared final
+src/main/java/com/example/service/BankAccountService.java:35:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/example/service/BankAccountService.java:42:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/BankAccountService.java:42:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/service/BankAccountService.java:42:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'amount' is not assigned and could be declared final
+src/main/java/com/example/service/BankAccountService.java:44:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'account' could be declared final
+src/main/java/com/example/service/BankAccountService.java:46:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'acct' could be declared final
+src/main/java/com/example/service/BankAccountService.java:52:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/BankAccountService.java:52:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/service/BankAccountService.java:52:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'amount' is not assigned and could be declared final
+src/main/java/com/example/service/BankAccountService.java:54:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'account' could be declared final
+src/main/java/com/example/service/BankAccountService.java:56:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'acct' could be declared final
+src/main/java/com/example/service/BankAccountService.java:60:	EmptyControlStatement:	EmptyControlStatement: Empty else statement
+src/main/java/com/example/service/BankAccountService.java:60:	EmptyIfStmt:	EmptyIfStmt: Avoid empty if statements
+src/main/java/com/example/service/BankAccountService.java:66:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/BankAccountService.java:66:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/service/BankAccountService.java:66:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'd' is not assigned and could be declared final
+src/main/java/com/example/service/BankAccountService.java:66:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'destAcctID' is not assigned and could be declared final
+src/main/java/com/example/service/BankAccountService.java:66:	ShortVariable:	ShortVariable: Avoid variables with short names like d
+src/main/java/com/example/service/BankAccountService.java:67:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'sourceAccountOptional' could be declared final
+src/main/java/com/example/service/BankAccountService.java:67:	LongVariable:	LongVariable: Avoid excessively long variable names like sourceAccountOptional
+src/main/java/com/example/service/BankAccountService.java:68:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'destinationAccountOptional' could be declared final
+src/main/java/com/example/service/BankAccountService.java:68:	LongVariable:	LongVariable: Avoid excessively long variable names like destinationAccountOptional
+src/main/java/com/example/service/BankAccountService.java:71:	AvoidThrowingRawExceptionTypes:	AvoidThrowingRawExceptionTypes: Avoid throwing raw exception types.
+src/main/java/com/example/service/BankAccountService.java:74:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'sourceAccount' could be declared final
+src/main/java/com/example/service/BankAccountService.java:75:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'destinationAccount' could be declared final
+src/main/java/com/example/service/BankAccountService.java:75:	LongVariable:	LongVariable: Avoid excessively long variable names like destinationAccount
+src/main/java/com/example/service/BankAccountService.java:78:	AvoidThrowingRawExceptionTypes:	AvoidThrowingRawExceptionTypes: Avoid throwing raw exception types.
+src/main/java/com/example/service/BankAccountService.java:88:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/BankAccountService.java:88:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/service/BankAccountService.java:88:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'destAcctID' is not assigned and could be declared final
+src/main/java/com/example/service/BankAccountService.java:88:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/com/example/service/BankAccountService.java:88:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/service/BankAccountService.java:89:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'sourceAccountOptional' could be declared final
+src/main/java/com/example/service/BankAccountService.java:89:	LongVariable:	LongVariable: Avoid excessively long variable names like sourceAccountOptional
+src/main/java/com/example/service/BankAccountService.java:90:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'destinationAccountOptional' could be declared final
+src/main/java/com/example/service/BankAccountService.java:90:	LongVariable:	LongVariable: Avoid excessively long variable names like destinationAccountOptional
+src/main/java/com/example/service/BankAccountService.java:91:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'currencyConverted' could be declared final
+src/main/java/com/example/service/BankAccountService.java:93:	AvoidThrowingRawExceptionTypes:	AvoidThrowingRawExceptionTypes: Avoid throwing raw exception types.
+src/main/java/com/example/service/BankAccountService.java:96:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'sourceAccount' could be declared final
+src/main/java/com/example/service/BankAccountService.java:97:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'destinationAccount' could be declared final
+src/main/java/com/example/service/BankAccountService.java:97:	LongVariable:	LongVariable: Avoid excessively long variable names like destinationAccount
+src/main/java/com/example/service/BankAccountService.java:100:	AvoidThrowingRawExceptionTypes:	AvoidThrowingRawExceptionTypes: Avoid throwing raw exception types.
+src/main/java/com/example/service/BankAccountService.java:111:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/BankAccountService.java:111:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'account' is not assigned and could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:18:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/example/service/CurrencyConversionService.java:18:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/service/CurrencyConversionService.java:21:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/service/CurrencyConversionService.java:21:	LongVariable:	LongVariable: Avoid excessively long variable names like currencyRepository
+src/main/java/com/example/service/CurrencyConversionService.java:24:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/service/CurrencyConversionService.java:24:	LongVariable:	LongVariable: Avoid excessively long variable names like currencyConversionRepository
+src/main/java/com/example/service/CurrencyConversionService.java:25:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/service/CurrencyConversionService.java:25:	FieldNamingConventions:	FieldNamingConventions: The constant name 'df' doesn't match '[A-Z][A-Z_0-9]*'
+src/main/java/com/example/service/CurrencyConversionService.java:25:	ShortVariable:	ShortVariable: Avoid variables with short names like df
+src/main/java/com/example/service/CurrencyConversionService.java:26:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/CurrencyConversionService.java:26:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'currency' is not assigned and could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:31:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/CurrencyConversionService.java:32:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'currencyList' could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:32:	UnnecessaryLocalBeforeReturn:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'currencyList'
+src/main/java/com/example/service/CurrencyConversionService.java:37:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/CurrencyConversionService.java:38:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'currencyConvertedList' could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:38:	LongVariable:	LongVariable: Avoid excessively long variable names like currencyConvertedList
+src/main/java/com/example/service/CurrencyConversionService.java:38:	UnnecessaryLocalBeforeReturn:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'currencyConvertedList'
+src/main/java/com/example/service/CurrencyConversionService.java:41:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/CurrencyConversionService.java:41:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'code' is not assigned and could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:44:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/example/service/CurrencyConversionService.java:46:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'currency' could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:47:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'optional' could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:47:	UnnecessaryLocalBeforeReturn:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'optional'
+src/main/java/com/example/service/CurrencyConversionService.java:54:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/CurrencyConversionService.java:54:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:54:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/service/CurrencyConversionService.java:58:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/CurrencyConversionService.java:58:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'currency' is not assigned and could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:63:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/CurrencyConversionService.java:63:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'amount' is not assigned and could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:63:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'fromCurrencyCode' is not assigned and could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:63:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'toCurrencyCode' is not assigned and could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:64:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'fromCurrency' could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:65:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'toCurrency' could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:66:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'exchangeFee' could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:67:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'orignal' could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:68:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'exchangeRate' could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:70:	UnsynchronizedStaticFormatter:	UnsynchronizedStaticFormatter: Static Formatter objects should be accessed in a synchronized manner
+src/main/java/com/example/service/CurrencyConversionService.java:75:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/CurrencyConversionService.java:75:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'amount' is not assigned and could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:75:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'fromCurrencyCode' is not assigned and could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:75:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'toCurrencyCode' is not assigned and could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:76:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'fromCurrency' could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:77:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'toCurrency' could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:78:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'feeCurrency' could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:79:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'exchangeFee' could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:80:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'orignal' could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:81:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'exchangeRate' could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:84:	UselessParentheses:	UselessParentheses: Useless parentheses.
+src/main/java/com/example/service/CurrencyConversionService.java:85:	UnsynchronizedStaticFormatter:	UnsynchronizedStaticFormatter: Static Formatter objects should be accessed in a synchronized manner
+src/main/java/com/example/service/CurrencyConversionService.java:86:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'currencyConverted' could be declared final
+src/main/java/com/example/service/CurrencyConversionService.java:87:	UnsynchronizedStaticFormatter:	UnsynchronizedStaticFormatter: Static Formatter objects should be accessed in a synchronized manner
+src/main/java/com/example/service/CustomerService.java:14:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/example/service/CustomerService.java:14:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/service/CustomerService.java:17:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/service/CustomerService.java:17:	LongVariable:	LongVariable: Avoid excessively long variable names like customerRepository
+src/main/java/com/example/service/CustomerService.java:19:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/CustomerService.java:19:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'customer' is not assigned and could be declared final
+src/main/java/com/example/service/CustomerService.java:23:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/CustomerService.java:23:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'cid' is not assigned and could be declared final
+src/main/java/com/example/service/CustomerService.java:24:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'optional' could be declared final
+src/main/java/com/example/service/CustomerService.java:27:	ControlStatementBraces:	ControlStatementBraces: This statement should have braces
+src/main/java/com/example/service/CustomerService.java:27:	OnlyOneReturn:	OnlyOneReturn: A method should have only one exit point, and that should be the last statement in the method
+src/main/java/com/example/service/CustomerService.java:33:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/CustomerService.java:34:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'list' could be declared final
+src/main/java/com/example/service/CustomerService.java:34:	UnnecessaryLocalBeforeReturn:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'list'
+src/main/java/com/example/service/CustomerService.java:37:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/CustomerService.java:37:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'customerId' is not assigned and could be declared final
+src/main/java/com/example/service/CustomerService.java:41:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/CustomerService.java:41:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'id' is not assigned and could be declared final
+src/main/java/com/example/service/CustomerService.java:41:	ShortVariable:	ShortVariable: Avoid variables with short names like id
+src/main/java/com/example/service/CustomerService.java:42:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'optional' could be declared final
+src/main/java/com/example/service/CustomerService.java:42:	UnnecessaryLocalBeforeReturn:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'optional'
+src/main/java/com/example/service/MyUserDetailsService.java:19:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/example/service/MyUserDetailsService.java:19:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/service/MyUserDetailsService.java:23:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/service/MyUserDetailsService.java:26:	AvoidUncheckedExceptionsInSignatures:	AvoidUncheckedExceptionsInSignatures: A method or constructor should not explicitly declare unchecked exceptions in its 'throws' clause
+src/main/java/com/example/service/MyUserDetailsService.java:26:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'username' is not assigned and could be declared final
+src/main/java/com/example/service/MyUserDetailsService.java:28:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'user' could be declared final
+src/main/java/com/example/service/MyUserDetailsService.java:30:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'list' could be declared final
+src/main/java/com/example/service/MyUserDetailsService.java:31:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'sga' could be declared final
+src/main/java/com/example/service/MyUserDetailsService.java:34:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'springUser' could be declared final
+src/main/java/com/example/service/MyUserDetailsService.java:34:	UnnecessaryLocalBeforeReturn:	UnnecessaryLocalBeforeReturn: Consider simply returning the value vs storing it in local variable 'springUser'
+src/main/java/com/example/service/TransactionService.java:13:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/main/java/com/example/service/TransactionService.java:13:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/service/TransactionService.java:15:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: Missing commented default access modifier on field 'transactionRepository'
+src/main/java/com/example/service/TransactionService.java:15:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/service/TransactionService.java:15:	LongVariable:	LongVariable: Avoid excessively long variable names like transactionRepository
+src/main/java/com/example/service/TransactionService.java:17:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/TransactionService.java:17:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'transaction' is not assigned and could be declared final
+src/main/java/com/example/service/TransactionService.java:25:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/TransactionService.java:25:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/service/TransactionService.java:34:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/service/TransactionService.java:34:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'acctID' is not assigned and could be declared final
+src/main/java/com/example/util/LoggerUtil.java:6:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/example/util/LoggerUtil.java:6:	UseUtilityClass:	UseUtilityClass: This utility class has a non-private constructor
+src/main/java/com/example/util/LoggerUtil.java:7:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/example/util/LoggerUtil.java:12:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: Missing commented default access modifier on constructor 'LoggerUtil()'
+src/main/java/com/example/util/LoggerUtil.java:12:	UncommentedEmptyConstructor:	UncommentedEmptyConstructor: Document empty constructor
+src/main/java/com/example/util/LoggerUtil.java:15:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/example/util/LoggerUtil.java:15:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'object' is not assigned and could be declared final
+src/main/java/com/example/util/LoggerUtil.java:19:	UncommentedEmptyMethodBody:	UncommentedEmptyMethodBody: Document empty method body
+src/test/java/com/example/controller/AdminControllerTest.java:29:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/test/java/com/example/controller/AdminControllerTest.java:29:	CommentRequired:	CommentRequired: Class comments are required
+src/test/java/com/example/controller/AdminControllerTest.java:29:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/AdminControllerTest.java:32:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/AdminControllerTest.java:35:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/AdminControllerTest.java:38:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/AdminControllerTest.java:41:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/AdminControllerTest.java:44:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/AdminControllerTest.java:47:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/AdminControllerTest.java:52:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/AdminControllerTest.java:52:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/AdminControllerTest.java:52:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/AdminControllerTest.java:53:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'admin' could be declared final
+src/test/java/com/example/controller/AdminControllerTest.java:54:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'user' could be declared final
+src/test/java/com/example/controller/AdminControllerTest.java:59:	LawOfDemeter:	LawOfDemeter: Call to `getUser` on foreign value `admin` (degree 1)
+src/test/java/com/example/controller/AdminControllerTest.java:62:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/test/java/com/example/controller/AdminControllerTest.java:64:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/AdminControllerTest.java:65:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/AdminControllerTest.java:67:	LawOfDemeter:	LawOfDemeter: Call to `getUser` on foreign value `admin` (degree 1)
+src/test/java/com/example/controller/AdminControllerTest.java:74:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/AdminControllerTest.java:74:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/AdminControllerTest.java:74:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/AdminControllerTest.java:75:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'admins' could be declared final
+src/test/java/com/example/controller/AdminControllerTest.java:81:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/test/java/com/example/controller/AdminControllerTest.java:83:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/AdminControllerTest.java:89:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/AdminControllerTest.java:89:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/AdminControllerTest.java:89:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/AdminControllerTest.java:90:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'adminId' could be declared final
+src/test/java/com/example/controller/AdminControllerTest.java:91:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'admin' could be declared final
+src/test/java/com/example/controller/AdminControllerTest.java:96:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/test/java/com/example/controller/AdminControllerTest.java:98:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/AdminControllerTest.java:99:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/AdminControllerTest.java:105:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/AdminControllerTest.java:105:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/AdminControllerTest.java:105:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/AdminControllerTest.java:105:	MethodNamingConventions:	MethodNamingConventions: The JUnit 5 test method name 'testGetAdminById_InvalidId' doesn't match '[a-z][a-zA-Z0-9]*'
+src/test/java/com/example/controller/AdminControllerTest.java:106:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'adminId' could be declared final
+src/test/java/com/example/controller/AdminControllerTest.java:110:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/test/java/com/example/controller/AdminControllerTest.java:112:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/AdminControllerTest.java:113:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/AdminControllerTest.java:119:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/AdminControllerTest.java:119:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/AdminControllerTest.java:119:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/AdminControllerTest.java:120:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'adminId' could be declared final
+src/test/java/com/example/controller/AdminControllerTest.java:121:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'admin' could be declared final
+src/test/java/com/example/controller/AdminControllerTest.java:125:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'updatedAdmin' could be declared final
+src/test/java/com/example/controller/AdminControllerTest.java:132:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/test/java/com/example/controller/AdminControllerTest.java:134:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/AdminControllerTest.java:135:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/AdminControllerTest.java:142:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/AdminControllerTest.java:142:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/AdminControllerTest.java:142:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/AdminControllerTest.java:142:	MethodNamingConventions:	MethodNamingConventions: The JUnit 5 test method name 'testUpdateAdmin_InvalidId' doesn't match '[a-z][a-zA-Z0-9]*'
+src/test/java/com/example/controller/AdminControllerTest.java:143:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'adminId' could be declared final
+src/test/java/com/example/controller/AdminControllerTest.java:144:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'updatedAdmin' could be declared final
+src/test/java/com/example/controller/AdminControllerTest.java:153:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/AdminControllerTest.java:161:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/AdminControllerTest.java:161:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/AdminControllerTest.java:161:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/AdminControllerTest.java:162:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'adminId' could be declared final
+src/test/java/com/example/controller/AdminControllerTest.java:163:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'admin' could be declared final
+src/test/java/com/example/controller/AdminControllerTest.java:168:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'expectedResponse' could be declared final
+src/test/java/com/example/controller/AdminControllerTest.java:168:	UseConcurrentHashMap:	UseConcurrentHashMap: If you run in Java5 or newer and have concurrent access, you should use the ConcurrentHashMap implementation
+src/test/java/com/example/controller/AdminControllerTest.java:171:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/test/java/com/example/controller/AdminControllerTest.java:173:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/AdminControllerTest.java:180:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/AdminControllerTest.java:180:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/AdminControllerTest.java:180:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/AdminControllerTest.java:180:	MethodNamingConventions:	MethodNamingConventions: The JUnit 5 test method name 'testDeleteAdmin_InvalidId' doesn't match '[a-z][a-zA-Z0-9]*'
+src/test/java/com/example/controller/AdminControllerTest.java:181:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'adminId' could be declared final
+src/test/java/com/example/controller/AdminControllerTest.java:188:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/BankAccountControllerTest.java:1:	TooManyStaticImports:	TooManyStaticImports: Too many static imports may lead to messy code
+src/test/java/com/example/controller/BankAccountControllerTest.java:25:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/test/java/com/example/controller/BankAccountControllerTest.java:25:	CommentRequired:	CommentRequired: Class comments are required
+src/test/java/com/example/controller/BankAccountControllerTest.java:28:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/BankAccountControllerTest.java:28:	LongVariable:	LongVariable: Avoid excessively long variable names like bankAccountService
+src/test/java/com/example/controller/BankAccountControllerTest.java:31:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/BankAccountControllerTest.java:34:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/BankAccountControllerTest.java:34:	LongVariable:	LongVariable: Avoid excessively long variable names like transactionController
+src/test/java/com/example/controller/BankAccountControllerTest.java:37:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/BankAccountControllerTest.java:37:	LongVariable:	LongVariable: Avoid excessively long variable names like bankAccountController
+src/test/java/com/example/controller/BankAccountControllerTest.java:39:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/BankAccountControllerTest.java:40:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/BankAccountControllerTest.java:51:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/BankAccountControllerTest.java:54:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/test/java/com/example/controller/BankAccountControllerTest.java:61:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/BankAccountControllerTest.java:63:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'balance' could be declared final
+src/test/java/com/example/controller/BankAccountControllerTest.java:70:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/BankAccountControllerTest.java:70:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/BankAccountControllerTest.java:71:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'acctID' could be declared final
+src/test/java/com/example/controller/BankAccountControllerTest.java:81:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/BankAccountControllerTest.java:81:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/BankAccountControllerTest.java:81:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/BankAccountControllerTest.java:82:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'acctID' could be declared final
+src/test/java/com/example/controller/BankAccountControllerTest.java:83:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'bankAccount' could be declared final
+src/test/java/com/example/controller/BankAccountControllerTest.java:87:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'result' could be declared final
+src/test/java/com/example/controller/BankAccountControllerTest.java:90:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:25:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:25:	CommentRequired:	CommentRequired: Class comments are required
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:25:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:28:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:28:	LongVariable:	LongVariable: Avoid excessively long variable names like currencyConversionService
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:31:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:31:	LongVariable:	LongVariable: Avoid excessively long variable names like currencyConversionController
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:33:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:37:	AvoidDuplicateLiterals:	AvoidDuplicateLiterals: The String literal "USD" appears 6 times in this file; the first occurrence is on line 37
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:41:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:41:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:41:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:44:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:46:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:47:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:48:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:52:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:52:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:52:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:53:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'currency1' could be declared final
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:54:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'currency2' could be declared final
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:55:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'currencies' could be declared final
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:58:	LawOfDemeter:	LawOfDemeter: Call to `getAllExchangeRates` on foreign value `currencyConversionController` (degree 1)
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:58:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:60:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:61:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:65:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:65:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:65:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:68:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:70:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:71:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:75:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:75:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:75:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:80:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:82:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:83:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/CurrencyConversionControllerTest.java:84:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/CustomerControllerTest.java:1:	TooManyStaticImports:	TooManyStaticImports: Too many static imports may lead to messy code
+src/test/java/com/example/controller/CustomerControllerTest.java:24:	UnnecessaryImport:	UnnecessaryImport: Unused import 'com.example.util.LoggerUtil'
+src/test/java/com/example/controller/CustomerControllerTest.java:31:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/test/java/com/example/controller/CustomerControllerTest.java:31:	CommentRequired:	CommentRequired: Class comments are required
+src/test/java/com/example/controller/CustomerControllerTest.java:31:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/CustomerControllerTest.java:34:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/CustomerControllerTest.java:37:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/CustomerControllerTest.java:37:	LongVariable:	LongVariable: Avoid excessively long variable names like customerRepository
+src/test/java/com/example/controller/CustomerControllerTest.java:40:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/CustomerControllerTest.java:43:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/CustomerControllerTest.java:46:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/CustomerControllerTest.java:46:	LongVariable:	LongVariable: Avoid excessively long variable names like customerController
+src/test/java/com/example/controller/CustomerControllerTest.java:49:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/CustomerControllerTest.java:54:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/CustomerControllerTest.java:54:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/CustomerControllerTest.java:54:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/CustomerControllerTest.java:56:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'customer' could be declared final
+src/test/java/com/example/controller/CustomerControllerTest.java:57:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'user' could be declared final
+src/test/java/com/example/controller/CustomerControllerTest.java:67:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/test/java/com/example/controller/CustomerControllerTest.java:70:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/CustomerControllerTest.java:71:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/CustomerControllerTest.java:75:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/CustomerControllerTest.java:75:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/CustomerControllerTest.java:75:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/CustomerControllerTest.java:77:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'customers' could be declared final
+src/test/java/com/example/controller/CustomerControllerTest.java:85:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'result' could be declared final
+src/test/java/com/example/controller/CustomerControllerTest.java:88:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/CustomerControllerTest.java:89:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/CustomerControllerTest.java:93:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/CustomerControllerTest.java:93:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/CustomerControllerTest.java:93:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/CustomerControllerTest.java:95:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'customer' could be declared final
+src/test/java/com/example/controller/CustomerControllerTest.java:102:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/test/java/com/example/controller/CustomerControllerTest.java:105:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/CustomerControllerTest.java:106:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/CustomerControllerTest.java:110:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/CustomerControllerTest.java:110:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/CustomerControllerTest.java:110:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/CustomerControllerTest.java:112:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'existingCustomer' could be declared final
+src/test/java/com/example/controller/CustomerControllerTest.java:115:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'updatedCustomer' could be declared final
+src/test/java/com/example/controller/CustomerControllerTest.java:123:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/test/java/com/example/controller/CustomerControllerTest.java:126:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/CustomerControllerTest.java:127:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/CustomerControllerTest.java:131:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/CustomerControllerTest.java:131:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/CustomerControllerTest.java:131:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/CustomerControllerTest.java:136:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/test/java/com/example/controller/CustomerControllerTest.java:139:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/CustomerControllerTest.java:140:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/TransactionControllerTest.java:4:	UnnecessaryImport:	UnnecessaryImport: Unused static import 'org.mockito.Mockito.mock'
+src/test/java/com/example/controller/TransactionControllerTest.java:19:	UnnecessaryImport:	UnnecessaryImport: Unused import 'org.springframework.http.HttpStatus'
+src/test/java/com/example/controller/TransactionControllerTest.java:20:	UnnecessaryImport:	UnnecessaryImport: Unused import 'org.springframework.http.ResponseEntity'
+src/test/java/com/example/controller/TransactionControllerTest.java:25:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/test/java/com/example/controller/TransactionControllerTest.java:25:	CommentRequired:	CommentRequired: Class comments are required
+src/test/java/com/example/controller/TransactionControllerTest.java:25:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/TransactionControllerTest.java:28:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/TransactionControllerTest.java:28:	LongVariable:	LongVariable: Avoid excessively long variable names like transactionService
+src/test/java/com/example/controller/TransactionControllerTest.java:31:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/TransactionControllerTest.java:31:	LongVariable:	LongVariable: Avoid excessively long variable names like transactionController
+src/test/java/com/example/controller/TransactionControllerTest.java:34:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/TransactionControllerTest.java:39:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/TransactionControllerTest.java:39:	FieldDeclarationsShouldBeAtStartOfClass:	FieldDeclarationsShouldBeAtStartOfClass: Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/test/java/com/example/controller/TransactionControllerTest.java:42:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/TransactionControllerTest.java:42:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/TransactionControllerTest.java:42:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/TransactionControllerTest.java:43:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'transaction' could be declared final
+src/test/java/com/example/controller/TransactionControllerTest.java:48:	LawOfDemeter:	LawOfDemeter: Call to `getValue` on foreign value `transactionCaptor` (degree 1)
+src/test/java/com/example/controller/TransactionControllerTest.java:48:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'capturedTransaction' could be declared final
+src/test/java/com/example/controller/TransactionControllerTest.java:48:	LongVariable:	LongVariable: Avoid excessively long variable names like capturedTransaction
+src/test/java/com/example/controller/TransactionControllerTest.java:49:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/TransactionControllerTest.java:50:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/TransactionControllerTest.java:54:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/TransactionControllerTest.java:54:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/TransactionControllerTest.java:55:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'accountId' could be declared final
+src/test/java/com/example/controller/TransactionControllerTest.java:56:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'expectedTransaction' could be declared final
+src/test/java/com/example/controller/TransactionControllerTest.java:56:	LongVariable:	LongVariable: Avoid excessively long variable names like expectedTransaction
+src/test/java/com/example/controller/TransactionControllerTest.java:60:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'result' could be declared final
+src/test/java/com/example/controller/TransactionControllerTest.java:62:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/TransactionControllerTest.java:66:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/TransactionControllerTest.java:66:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/TransactionControllerTest.java:67:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'accountId' could be declared final
+src/test/java/com/example/controller/UserControllerTest.java:22:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/test/java/com/example/controller/UserControllerTest.java:22:	CommentRequired:	CommentRequired: Class comments are required
+src/test/java/com/example/controller/UserControllerTest.java:22:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/UserControllerTest.java:25:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/UserControllerTest.java:28:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/UserControllerTest.java:31:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/UserControllerTest.java:34:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/example/controller/UserControllerTest.java:37:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/UserControllerTest.java:42:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/UserControllerTest.java:42:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/UserControllerTest.java:42:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/UserControllerTest.java:43:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'user' could be declared final
+src/test/java/com/example/controller/UserControllerTest.java:44:	AvoidDuplicateLiterals:	AvoidDuplicateLiterals: The String literal "john.doe" appears 6 times in this file; the first occurrence is on line 44
+src/test/java/com/example/controller/UserControllerTest.java:51:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/test/java/com/example/controller/UserControllerTest.java:53:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/UserControllerTest.java:54:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/UserControllerTest.java:62:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/UserControllerTest.java:62:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/UserControllerTest.java:62:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/UserControllerTest.java:62:	MethodNamingConventions:	MethodNamingConventions: The JUnit 5 test method name 'testSignUp_UsernameConflict' doesn't match '[a-z][a-zA-Z0-9]*'
+src/test/java/com/example/controller/UserControllerTest.java:63:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'user' could be declared final
+src/test/java/com/example/controller/UserControllerTest.java:69:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/test/java/com/example/controller/UserControllerTest.java:71:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/UserControllerTest.java:72:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/UserControllerTest.java:80:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/UserControllerTest.java:80:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/UserControllerTest.java:80:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/UserControllerTest.java:81:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'principal' could be declared final
+src/test/java/com/example/controller/UserControllerTest.java:84:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'user' could be declared final
+src/test/java/com/example/controller/UserControllerTest.java:90:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/test/java/com/example/controller/UserControllerTest.java:92:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/UserControllerTest.java:93:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/UserControllerTest.java:99:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/UserControllerTest.java:99:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/UserControllerTest.java:99:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/UserControllerTest.java:99:	MethodNamingConventions:	MethodNamingConventions: The JUnit 5 test method name 'testLogin_InvalidRole' doesn't match '[a-z][a-zA-Z0-9]*'
+src/test/java/com/example/controller/UserControllerTest.java:100:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'principal' could be declared final
+src/test/java/com/example/controller/UserControllerTest.java:103:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'user' could be declared final
+src/test/java/com/example/controller/UserControllerTest.java:105:	AvoidDuplicateLiterals:	AvoidDuplicateLiterals: The String literal "admin" appears 6 times in this file; the first occurrence is on line 105
+src/test/java/com/example/controller/UserControllerTest.java:109:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/test/java/com/example/controller/UserControllerTest.java:111:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/UserControllerTest.java:112:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/UserControllerTest.java:118:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/UserControllerTest.java:118:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/UserControllerTest.java:118:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/UserControllerTest.java:119:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'principal' could be declared final
+src/test/java/com/example/controller/UserControllerTest.java:122:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'user' could be declared final
+src/test/java/com/example/controller/UserControllerTest.java:128:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/test/java/com/example/controller/UserControllerTest.java:130:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/UserControllerTest.java:131:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/UserControllerTest.java:137:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/example/controller/UserControllerTest.java:137:	JUnit5TestShouldBePackagePrivate:	JUnit5TestShouldBePackagePrivate: JUnit 5 tests should be package-private.
+src/test/java/com/example/controller/UserControllerTest.java:137:	JUnitTestContainsTooManyAsserts:	JUnitTestContainsTooManyAsserts: Unit tests should not contain more than 1 assert(s).
+src/test/java/com/example/controller/UserControllerTest.java:137:	MethodNamingConventions:	MethodNamingConventions: The JUnit 5 test method name 'testAdminLogin_InvalidRole' doesn't match '[a-z][a-zA-Z0-9]*'
+src/test/java/com/example/controller/UserControllerTest.java:138:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'principal' could be declared final
+src/test/java/com/example/controller/UserControllerTest.java:141:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'user' could be declared final
+src/test/java/com/example/controller/UserControllerTest.java:147:	LocalVariableCouldBeFinal:	LocalVariableCouldBeFinal: Local variable 'response' could be declared final
+src/test/java/com/example/controller/UserControllerTest.java:149:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/controller/UserControllerTest.java:150:	JUnitAssertionsShouldIncludeMessage:	JUnitAssertionsShouldIncludeMessage: JUnit assertions should include a message
+src/test/java/com/example/demo/BootApp1ApplicationTests.java:7:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/test/java/com/example/demo/BootApp1ApplicationTests.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/test/java/com/example/demo/BootApp1ApplicationTests.java:10:	JUnitTestsShouldIncludeAssert:	JUnitTestsShouldIncludeAssert: JUnit tests should include assert() or fail()
+src/test/java/com/example/demo/BootApp1ApplicationTests.java:10:	UncommentedEmptyMethodBody:	UncommentedEmptyMethodBody: Document empty method body
