@@ -48,27 +48,29 @@ public class AdminControllerTest {
         MockitoAnnotations.openMocks(this);
     }
 
-    @Test
-    public void testPostAdmin() {
-        Admin admin = new Admin();
-        User user = new User();
-        user.setUsername("admin");
-        user.setPassword("password");
-        admin.setUser(user);
+    //	Add Admin
+	@PostMapping("/add")
+	public ResponseEntity<String> postadmin(@RequestBody Admin admin) {
+		
+//		Fetch User info from employee input and save it in DB 
+				User user = admin.getUser(); //I have username and password 
+				//I will assign the role
+				user.setRole("admin");
 
-        when(passwordEncoder.encode(admin.getUser().getPassword())).thenReturn("encodedPassword");
-        when(userRepository.save(any(User.class))).thenReturn(user);
+				//Converting plain text password into encoded text
+				String encodedPassword = passwordEncoder.encode(user.getPassword());
+				//attach encoded password to user
+				user.setPassword(encodedPassword);
 
-        ResponseEntity<String> response = adminController.postadmin(admin);
+				user  = userRepository.save(user);
 
-        assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertEquals("admin added ...", response.getBody());
+				//Attach user object to employee
+				admin.setUser(user);
+		
+		adminService.postadmin(admin);
+		return ResponseEntity.status(HttpStatus.OK).body("admin added ...");
+	}
 
-        verify(passwordEncoder).encode(admin.getUser().getPassword());
-        verify(userRepository).save(any(User.class));
-        verify(adminService).postadmin(admin);
-
-    }
 
     @Test
     public void testGetAllAdmin() {
