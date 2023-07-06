@@ -1,53 +1,51 @@
 package com.example.controller;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.ArgumentMatchers.*;
-import static org.mockito.Mockito.*;
-
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.example.exception.ResourceNotFoundException;
 import com.example.model.Admin;
 import com.example.model.User;
+
 import com.example.repository.AdminRepository;
 import com.example.repository.UserRepository;
 import com.example.service.AdminService;
 
-public class AdminControllerTest {
+@CrossOrigin(origins = {"*"})
+@RestController
+@RequestMapping("/api/admin")
+public class AdminController {
+	
+	@Autowired
+	private AdminService adminService;
 
-    @Mock
-    private AdminService adminService;
-
-    @Mock
-    private AdminRepository adminRepository;
-
-    @Mock
-    private PasswordEncoder passwordEncoder;
-
-    @Mock
-    private UserRepository userRepository;
-
-    @InjectMocks
-    private AdminController adminController;
-
-    @BeforeEach
-    public void setup() {
-        MockitoAnnotations.openMocks(this);
-    }
-
+	@Autowired
+	private AdminRepository adminRepository;
+	
+	@Autowired
+	private PasswordEncoder passwordEncoder;
+	
+	@Autowired
+	private UserRepository userRepository;
+	
+	
+	
     //	Add Admin
 	@PostMapping("/add")
 	public ResponseEntity<String> postadmin(@RequestBody Admin admin) {
@@ -71,126 +69,52 @@ public class AdminControllerTest {
 		return ResponseEntity.status(HttpStatus.OK).body("admin added ...");
 	}
 
+	// Get List Of All Admins
+	@GetMapping("/getall")
+	public List<Admin> getAlladmin() {
+		List<Admin> list = adminService.getAlladmin();
+		return list;
+	}
+	
+	
+	// Get Admin By Id
+	@GetMapping("/one/{id}")
+	public ResponseEntity<Object> getadminById(@PathVariable("id") Long id) {
+		Optional<Admin> optional = adminService.findById(id);
 
-    @Test
-    public void testGetAllAdmin() {
-        List<Admin> admins = new ArrayList<>();
-        admins.add(new Admin());
-        admins.add(new Admin());
+		if (optional == null)
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Invalid ID Given");
 
-        when(adminService.getAlladmin()).thenReturn(admins);
+		Admin admin = optional.get();
+		return ResponseEntity.status(HttpStatus.OK).body(admin);
+	}
+	
+	// Update Admin Details
+	@PutMapping("/update/{id}")
+	public ResponseEntity<Admin> updateadmin(@PathVariable Long id, @RequestBody Admin adminDetails)
+			throws ResourceNotFoundException {
+		Admin admin = adminService.findById(id)
+				.orElseThrow(() -> new ResourceNotFoundException("admin not exist with id: " + id));
 
-        List<Admin> response = adminController.getAlladmin();
+		admin.setName(adminDetails.getName());
+		admin.setAddress(adminDetails.getAddress());
+		admin.setEmailId(adminDetails.getEmailId());
+		admin.setNumber(adminDetails.getNumber());
 
-        assertEquals(admins, response);
+		final Admin updatedadmin = adminRepository.save(admin);
+		
+		return ResponseEntity.ok(updatedadmin);
+	}
+	
+	// Delete Admin
+	@DeleteMapping("/delete/{id}")
+	public Map<String, Boolean> deleteadmin(@PathVariable Long id) throws ResourceNotFoundException {
+		Admin admin = adminService.findById(id)
+				.orElseThrow(() -> new ResourceNotFoundException("admin not found for this id :: " + id));
 
-        verify(adminService).getAlladmin();
-    }
-
-    @Test
-    public void testGetAdminById() {
-        Long adminId = 1L;
-        Admin admin = new Admin();
-        admin.setId(adminId);
-
-        when(adminService.findById(adminId)).thenReturn(Optional.of(admin));
-
-        ResponseEntity<Object> response = adminController.getadminById(adminId);
-
-        assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertEquals(admin, response.getBody());
-
-        verify(adminService).findById(adminId);
-    }
-
-    @Test
-    public void testGetAdminById_InvalidId() {
-        Long adminId = 1L;
-
-        when(adminService.findById(adminId)).thenReturn(Optional.empty());
-
-        ResponseEntity<Object> response = adminController.getadminById(adminId);
-
-        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
-        assertEquals("Invalid ID Given", response.getBody());
-
-        verify(adminService).findById(adminId);
-    }
-
-    @Test
-    public void testUpdateAdmin() throws ResourceNotFoundException {
-        Long adminId = 1L;
-        Admin admin = new Admin();
-        admin.setId(adminId);
-        admin.setName("John Doe");
-
-        Admin updatedAdmin = new Admin();
-        updatedAdmin.setId(adminId);
-        updatedAdmin.setName("John Doe Updated");
-
-        when(adminService.findById(adminId)).thenReturn(Optional.of(admin));
-        when(adminRepository.save(any(Admin.class))).thenReturn(updatedAdmin);
-
-        ResponseEntity<Admin> response = adminController.updateadmin(adminId, updatedAdmin);
-
-        assertEquals(HttpStatus.OK, response.getStatusCode());
-        assertEquals(updatedAdmin, response.getBody());
-
-        verify(adminService).findById(adminId);
-        verify(adminRepository).save(any(Admin.class));
-    }
-
-    @Test
-    public void testUpdateAdmin_InvalidId() {
-        Long adminId = 1L;
-        Admin updatedAdmin = new Admin();
-        updatedAdmin.setId(adminId);
-        updatedAdmin.setName("John Doe Updated");
-
-        when(adminService.findById(adminId)).thenReturn(Optional.empty());
-
-        try {
-            adminController.updateadmin(adminId, updatedAdmin);
-        } catch (ResourceNotFoundException ex) {
-            assertEquals("admin not exist with id: " + adminId, ex.getMessage());
-        }
-
-        verify(adminService).findById(adminId);
-        verify(adminRepository, never()).save(any(Admin.class));
-    }
-
-    @Test
-    public void testDeleteAdmin() throws ResourceNotFoundException {
-        Long adminId = 1L;
-        Admin admin = new Admin();
-        admin.setId(adminId);
-
-        when(adminService.findById(adminId)).thenReturn(Optional.of(admin));
-
-        Map<String, Boolean> expectedResponse = new HashMap<>();
-        expectedResponse.put("deleted", true);
-
-        Map<String, Boolean> response = adminController.deleteadmin(adminId);
-
-        assertEquals(expectedResponse, response);
-
-        verify(adminService).findById(adminId);
-        verify(adminService).deleteById(adminId);
-    }
-
-    @Test
-    public void testDeleteAdmin_InvalidId() {
-        Long adminId = 1L;
-
-        when(adminService.findById(adminId)).thenReturn(Optional.empty());
-
-        try {
-            adminController.deleteadmin(adminId);
-        } catch (ResourceNotFoundException ex) {
-            assertEquals("admin not found for this id :: " + adminId, ex.getMessage());
-        }
-
-        verify(adminService).findById(adminId);
-        verify(adminService, never()).deleteById(adminId);
-    }
+		adminService.deleteById(id);
+		Map<String, Boolean> response = new HashMap<>();
+		response.put("deleted", Boolean.TRUE);
+		return response;
+	}
 }
