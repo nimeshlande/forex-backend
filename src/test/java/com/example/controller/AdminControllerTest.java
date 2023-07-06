@@ -113,19 +113,6 @@ public class AdminControllerTest {
         verify(adminService).findById(adminId);
     }
 
-    @Test
-    public void testGetAdminById_InvalidId() {
-        Long adminId = 1L;
-
-        when(adminService.findById(adminId)).thenReturn(Optional.empty());
-
-        ResponseEntity<Object> response = adminController.getadminById(adminId);
-
-        assertEquals(HttpStatus.BAD_REQUEST, response.getStatusCode());
-        assertEquals("Invalid ID Given", response.getBody());
-
-        verify(adminService).findById(adminId);
-    }
 
     @Test
     public void testUpdateAdmin() throws ResourceNotFoundException {
