@@ -5,7 +5,6 @@ pipeline{
         stage('Checkout'){
             steps{
                 git branch:'main',url:'https://github.com/nimeshlande/forex-backend.git'
-                bat "mvn -Dmaven.test.failure.ignore=true clean package"
             }
         }
         stage('Build'){
